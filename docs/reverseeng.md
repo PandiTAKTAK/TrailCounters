@@ -19,6 +19,8 @@ X-Ray shows data cube is a 8-pin DIP with the 2x4p headers soldered directly to 
 
 *Likely* to be SPI flash.
 
+![Data cube](_media\datacube.png)
+
 #### Actions
 
 None -> The reader will provide the interfacing data in the first instance 
