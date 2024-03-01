@@ -23,6 +23,26 @@ X-Ray shows data cube is a 8-pin DIP with the 2x4p headers soldered directly to 
 
 None -> The reader will provide the interfacing data in the first instance 
 
+## Serial Link
+
+UART to USB
+
+### Initial Info
+
+### Investigation
+
+![Maxim part](_media\max3222cpn.png)
+
+- Houses Maxim [MAX3222CPN](https://pdfserv.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf)
+  - Level translator 3v0 to 5v5
+- P14 & 15 shorted - Likely being used as an ident
+
+![Pinout](_media\serialpinout.png)
+
+#### Actions
+
+TBD -> Sniff UART comms between PC and Reader
+
 ## Reader
 
 Used to extract data from the data cubes.

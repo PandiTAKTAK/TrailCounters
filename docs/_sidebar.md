@@ -1,2 +1,3 @@
 - [Introduction](/README)
+- [Inventory](/inventory)
 - [Reverse Engineering](/reverseeng)
