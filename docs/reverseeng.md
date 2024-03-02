@@ -13,7 +13,7 @@ They're a resin potted unit making them inconvenient to directly inspect.
 - 8 pins on 2.54 pitch headers.
 - 2 rows, pin 7 blanked.
 
-![Data cube](_media\datacube.png)
+![Data cube](_media/datacube.png)
 
 ### Investigation
 
@@ -58,7 +58,7 @@ UART to USB
 
 ### Investigation
 
-![Maxim part](_media\max3222cpn.png)
+![Maxim part](_media/max3222cpn.png)
 
 - Houses Maxim [MAX3222CPN](https://pdfserv.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf)
   - Level translator 3v0 to 5v5
@@ -66,19 +66,19 @@ UART to USB
 
 #### Pinout (DB-25 Plug)
 
-![Pinout](_media\serialpinout.png)
+![Pinout](_media/serialpinout.png)
 
 | Pin Number | Function   |
 |:----------:|:----------:|
-| 1          | ? (Green)  |
+| 1          | ? (Green)  Presume Tx from PC (no Rx on reader)|
 | ...        |            |
 | 14         | Bridge p15 |
 | 15         | Bridge p14 |
 | ...        |            |
-| 19         | ? (Blue)   |
+| 19         | 0V (Blue)  |
 | ...        |            |
-| 24         | ? (Yellow) |
-| 25         | ? (Red)    |
+| 24         | ? (Yellow) Presume Tx from PIC|
+| 25         | 5V (Red)   |
 
 #### Actions
 
@@ -139,7 +139,7 @@ Used to extract data from the data cubes.
 | ...        | NC         |
 | 19         | 0V (Blue)  |
 | ...        | NC         |
-| 24         | ? (Yellow) |
+| 24         | ? (Yellow) Presume Tx from PIC|
 | 25         | 5V (Purple)|
 
 #### Actions
