@@ -2,11 +2,11 @@
 
 ## Hardware
 
-- 3x Data cubes
-- 1x Logger
+- 3x [Data cubes](/reverseeng#data-cube)
+- 1x [Date Setter](/reverseeng#date-setter)
 - 1x Buzzer
-- 1x Reader
-- 1x Serial link (DB-25 -> DB-9)
+- 1x [Reader](/reverseeng#reader)
+- 1x [Serial link](/reverseeng#serial-link) (DB-25 -> DB-9)
 - 1x USB <-> Serial adapter
 
 ## Other
