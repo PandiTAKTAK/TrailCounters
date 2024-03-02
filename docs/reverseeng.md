@@ -13,13 +13,11 @@ They're a resin potted unit making them inconvenient to directly inspect.
 - 8 pins on 2.54 pitch headers.
 - 2 rows, pin 7 blanked.
 
+![Data cube](_media\datacube.png)
+
 ### Investigation
 
 X-Ray shows data cube is a 8-pin DIP with the 2x4p headers soldered directly to the pins.
-
-*Likely* to be SPI flash.
-
-![Data cube](_media\datacube.png)
 
 #### Pinout
 
@@ -37,6 +35,16 @@ X-Ray shows data cube is a 8-pin DIP with the 2x4p headers soldered directly to 
 #### Actions
 
 None -> The reader will provide the interfacing data in the first instance 
+
+### Thoughts
+
+*Likely* to be I2C EEPROM or similar.
+
+Based on [reader investigation](#pinout-cube), something along the lines of:
+
+![Serial EEPROM](_media/eeprom.png)
+
+Like [AT24C*](https://ww1.microchip.com/downloads/en/devicedoc/doc0180.pdf), or [25AA*](https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/25AA020A-25LC020A-2-Kbit-SPI-Bus-Serial-EEPROM-20001833H.pdf)
 
 ---
 
