@@ -23,7 +23,7 @@ X-Ray shows data cube is a 8-pin DIP with the 2x4p headers soldered directly to 
 
 #### Pinout
 
-?> N.B. Pinout here is from perspecitve looking at the headers on the cube. [Here for reader perspective](#pinout-cube).
+?> N.B. Pinout here is from perspective looking at the headers on the cube. [Here for reader perspective](#pinout-cube).
 
 | Pin Number | Function   | Function   | Pin Number |
 |:----------:|:----------:|:----------:|:----------:|
@@ -31,6 +31,8 @@ X-Ray shows data cube is a 8-pin DIP with the 2x4p headers soldered directly to 
 | 2          | ?          | **BLANK**  | 7          |
 | 3          | ?          | ?          | 6          |
 | 4          | ?          | ?          | 5          |
+
+!> p7 & p8 are electrically common
 
 #### Actions
 
@@ -103,7 +105,7 @@ Used to extract data from the data cubes.
 - Returned VBAT on DB-25 p15 is dropped to 5V using a TO-92 [LM78L](https://www.ti.com/lit/ds/symlink/lm78l.pdf?ts=1709367873785)
     - 5V routed to DB-25 p25 (purple)
 - Yellow DB-25 p24 routes to PIC RA2
-- Blue DB-25 p19 routes 
+- Blue DB-25 p19 routes to PIC VSS / 0V
 
 #### Pinout (Cube)
 
