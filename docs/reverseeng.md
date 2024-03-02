@@ -21,7 +21,7 @@ X-Ray shows data cube is a 8-pin DIP with the 2x4p headers soldered directly to 
 
 #### Pinout
 
-?> N.B. Pinout here is from perspective looking at the headers on the cube. [Here for reader perspective](#pinout-cube).
+?> N.B. Pinout here is from perspective looking at the headers on the cube, pin numbers are ascribed rather than known for the device, so could be backwards. [Here for reader perspective](#pinout-cube).
 
 | Pin Number | Function   | Function   | Pin Number |
 |:----------:|:----------:|:----------:|:----------:|
@@ -34,7 +34,7 @@ X-Ray shows data cube is a 8-pin DIP with the 2x4p headers soldered directly to 
 
 #### Actions
 
-None -> The reader will provide the interfacing data in the first instance 
+- None -> The reader will provide the interfacing data in the first instance 
 
 ### Thoughts
 
@@ -82,7 +82,7 @@ UART to USB
 
 #### Actions
 
-TBD -> Sniff UART comms between PC and Reader
+- TBD -> Sniff UART comms between PC and Reader
 
 ---
 
@@ -144,10 +144,13 @@ Used to extract data from the data cubes.
 
 #### Actions
 
-TBD -> Probe pins for VCC and 0V
-TBD -> Identify clock and data lines
-TBD -> 
-TBD -> Sniff UART comms between PC and Reader
+- ~~TBD -> Probe pins for VCC and 0V~~
+  - Whole row is tied to 0V
+  - VCC appears to be supplied by GPIO of PIC
+- TBD -> Identify clock and data lines
+- TBD -> Sniff UART comms between PC and Reader
+  - Appears to be Tx only
+  - Rx appears available on board but unused
 
 ---
 
@@ -163,7 +166,7 @@ TBD
 
 #### Actions
 
-TBD -> Investigate
+- TBD -> Investigate
 
 ---
 
@@ -175,7 +178,7 @@ The base station is buried near the trail in order to conceal the equipment.
 
 #### Actions
 
-TBD -> Probe pins
+- TBD -> Probe pins
 
 ---
 
@@ -187,4 +190,4 @@ The pressure pad is buried underneath the trail surface. Likely a piezo-electric
 
 #### Actions
 
-TBD -> Probe pins
+- TBD -> Probe pins
