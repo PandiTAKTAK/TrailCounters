@@ -8,6 +8,7 @@
 - 1x [Reader](/reverseeng#reader)
 - 1x [Serial link](/reverseeng#serial-link) (DB-25 -> DB-9)
 - 1x USB <-> Serial adapter
+- 1x Multimetre
 
 ## Other
 
